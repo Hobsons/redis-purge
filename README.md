@@ -38,3 +38,11 @@ DELETE 0D1F39461DB508DD48E7CA3A51523B28
 ...
 > deleted 75 keys (147289133 total size) matching Search="<saml2p:AuthnRequest" (size>=10000 bytes) (match >= 3 occurrences), 0 keys failed delete
 ```
+
+
+#Install
+
+```
+go get github.com/go-redis/redis
+go build redis-purge
+```
