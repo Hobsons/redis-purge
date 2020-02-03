@@ -28,7 +28,9 @@ example:
 
 
 '''
-[user@tomcat-ops-297 ~]$ DELETE_MATCHING_KEYS=y REDIS_ADDR=session-cache.ore.starfishsolutions.com:6379 REQUIRED_MATCH_COUNT=3 SIZE_THRESHOLD=10000 ./redis-purge '<saml2p:AuthnRequest'
+$ go build ./redis-purge.go
+
+$ DELETE_MATCHING_KEYS=y REDIS_ADDR=session-cache.ore.starfishsolutions.com:6379 REQUIRED_MATCH_COUNT=3 SIZE_THRESHOLD=10000 ./redis-purge '<saml2p:AuthnRequest'
 > deleting keys with value matching Search="<saml2p:AuthnRequest" (size>=10000 bytes) (match >= 3 occurrences)
 DELETE 1021E27775BB6807EB110AEB752A18B7
 DELETE B84D1907C8C6BBB3615EE57FF7F8A6D8
