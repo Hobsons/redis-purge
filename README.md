@@ -1,5 +1,5 @@
 # redis-purge
-Purge redis keys matching a search value. Must be run from a system or proxy with access to elasticache
+Purge redis keys matching a search value. Must be run from a system or proxy with access to elasticache for the script to connect to redis
 
 '''
 $ go run scrubRedis.go
