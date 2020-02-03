@@ -9,7 +9,7 @@ Usage:
 [DELETE_MATCHING_KEYS=yes] \
 [REQUIRED_MATCH_COUNT=n]   \
 [SIZE_THRESHOLD=x]         \
-	/var/folders/m4/_bpm7k_57qj05m8lq4wcgj7w0000gp/T/go-build500872978/b001/exe/scrubRedis [value]
+./scrubRedis [value]
 ```
 
 # options:
