@@ -2,17 +2,19 @@
 Purge redis keys matching a search value. Must be run from a system or proxy with access to elasticache for the script to connect to redis
 
 ```
-$ go run scrubRedis.go
+$ go run redis-purge.go
 Usage:
 
 [REDIS_ADDR=...]           \
 [DELETE_MATCHING_KEYS=yes] \
 [REQUIRED_MATCH_COUNT=n]   \
 [SIZE_THRESHOLD=x]         \
-./purge-redis [value]
+./redis-purge [value]
 ```
 
 # options:
+
+REDIS_ADDR: Address of the redis master node
 
 Deletes all keys with a given value if run with `DELETE_MATCHING_KEYS=yes`
 or `DELETE_MATCHING_KEYS=y` in the environment, otherwise lists the keys with
@@ -25,6 +27,7 @@ If `REQUIRED_MATCH_COUNT` is a number >0, then keys are selected if the value
 contains the search pattern _at least_ that many times.
 exit status 1
 
+value: String to match when searching for large keys
 
 # example:
 
