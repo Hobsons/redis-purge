@@ -9,7 +9,7 @@ Usage:
 [DELETE_MATCHING_KEYS=yes] \
 [REQUIRED_MATCH_COUNT=n]   \
 [SIZE_THRESHOLD=x]         \
-./scrubRedis [value]
+./purge-redis [value]
 ```
 
 # options:
